@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoItem render 1`] = `
+<div
+  className="info-item"
+>
+  <div
+    className="info info-text"
+  />
+  <div
+    className="info"
+  />
+</div>
+`;

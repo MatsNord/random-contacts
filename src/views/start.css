@@ -1,0 +1,16 @@
+.splash{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 300px;
+  background: cornflowerblue;
+  font-size: 18pt;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px; 
+}
+a:link {
+  text-decoration: none;
+ }

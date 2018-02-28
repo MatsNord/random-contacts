@@ -1,0 +1,98 @@
+
+.card{
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: thin solid gray;
+  margin: 0; 
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    margin: 20px 20px 10px 20px;  
+    width: 96%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 20px 20px 10px 20px;  
+    width: 96%;
+  }
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.card.full-height {
+  min-height: calc(100vh - 128px);
+}
+
+div.picture.full-view {
+  display: block;
+}
+
+.details-nav i{
+  color: white;
+  float: right;
+  margin-right: 12px;
+  line-height: 18px;
+  vertical-align: bottom;
+}
+
+.header {
+  background-color: #51adc4;
+  color: #ffffff;
+  padding: 0.1em 0.5em 0.1em 0.7em;
+  border-bottom: thin solid lightgrey;
+  margin-bottom: 30px;
+  }
+.header h1 {
+  padding-left: 25px;
+  font-size: x-large;  
+}
+
+.lower.header h1{
+  font-size: larger;
+}
+
+div.info {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+div.picture {
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.picture img {
+  border: 0px solid rgb(213, 241, 239);
+  border-radius: 36px;
+  padding: 0px;
+  box-shadow: 0px 0px rgb(213, 209, 214);
+  margin-bottom: 20px;
+}
+
+div.picture.full-view img {
+  border-radius: 0;
+  border: 0px solid rgb(213, 241, 239);
+  padding: 0px;
+  box-shadow: 0px 0px rgb(213, 209, 214);
+  margin-bottom: 50px;
+}
+
+
+.info-text {
+  width: 90px;
+}
+
+.name, .phone {
+  display: inline-block;
+}
+.name:first-letter {
+  text-transform: uppercase;
+}

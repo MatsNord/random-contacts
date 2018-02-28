@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameItem render 1`] = `
+<span>
+  <div
+    className="name"
+  />
+</span>
+`;

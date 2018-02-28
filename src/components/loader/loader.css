@@ -1,0 +1,24 @@
+
+
+.loader {
+  border: 16px solid rgb(200, 163, 236);
+  border-radius: 50%;
+  border-top: 16px solid  rgb(185, 81, 211);
+  border-bottom: 16px solid rgb(185, 81, 211);
+  width: 100px;
+  height: 100px;
+  animation: spin 3s linear infinite;
+}
+
+.loader.center {
+  position: fixed;
+  top: calc(100vh - 50% - 50px);
+  left: calc(100vw - 50% - 50px);
+};
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  
