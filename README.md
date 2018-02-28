@@ -1,4 +1,4 @@
-# random-rolodex
+# random-contacts
 Contacts app of randomuser.me
 
 ## Install
