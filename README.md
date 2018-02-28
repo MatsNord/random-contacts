@@ -5,7 +5,7 @@ Contacts app of randomuser.me
 `npm install` or use `yarn install`
 
 ## Externa dependencies
-It uses the API of (Random User Generator)https://randomuser.me/ No mock installed in GUI.
+It uses the API of Random User Generator(https://randomuser.me/) No mock installed in GUI.
 
 ## Miscelaneous
 The APP is not ejected from create-react-app scripts, so the rest of the readme should be valid, if I did not break anything.
