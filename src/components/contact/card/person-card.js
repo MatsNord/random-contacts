@@ -1,4 +1,5 @@
 import React from 'react';
+import { PersonType } from '../contactPropTypes';
 import Card from './card';
 
  const PersonCard = ({person}) => (
@@ -6,6 +7,8 @@ import Card from './card';
       <Card person={person} fullInfo />
     </div>
   );
+
+PersonCard.prototype = PersonType;
 
 export default PersonCard;
 

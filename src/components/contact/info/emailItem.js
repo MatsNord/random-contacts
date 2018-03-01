@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+
 // Component to display mail link
 const EmailItem = ( {infoText, email} ) => (
   <div className="info-item">
@@ -6,5 +8,11 @@ const EmailItem = ( {infoText, email} ) => (
     <a href={`mailto:${email}`}>{email}</a>
   </div>
 );
+
+EmailItem.propTypes = {
+  infoText: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired
+}
+
 export default EmailItem;
 

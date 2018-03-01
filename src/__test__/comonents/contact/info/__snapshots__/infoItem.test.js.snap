@@ -6,9 +6,13 @@ exports[`InfoItem render 1`] = `
 >
   <div
     className="info info-text"
-  />
+  >
+    infoText
+  </div>
   <div
     className="info"
-  />
+  >
+    info
+  </div>
 </div>
 `;

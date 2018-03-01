@@ -1,4 +1,6 @@
 import React from 'react';
+import { PersonType } from '../contactPropTypes';
+
 import InfoItem from '../info/infoItem';
 
 const ListInfo = ({person}) => {
@@ -10,5 +12,7 @@ const ListInfo = ({person}) => {
           <InfoItem infoText="Email" info={person.email} />
         </div>
   )};
-  
+
+ListInfo.prototype = PersonType;
+
 export default ListInfo;

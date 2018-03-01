@@ -6,9 +6,13 @@ exports[`Email render 1`] = `
 >
   <div
     className="info info-text"
-  />
+  >
+    infoText
+  </div>
   <a
-    href="mailto:undefined"
-  />
+    href="mailto:email@email.email"
+  >
+    email@email.email
+  </a>
 </div>
 `;

@@ -4,6 +4,6 @@ import InfoItem from './../../../../components/contact/info/infoItem';
 
 test('InfoItem render', () => {
 
-  const tree = renderer.create(<InfoItem />).toJSON();
+  const tree = renderer.create(<InfoItem info="info" infoText="infoText" />).toJSON();
   expect(tree).toMatchSnapshot();
 });

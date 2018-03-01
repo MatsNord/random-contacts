@@ -1,8 +1,14 @@
 import React from 'react';
-// Component to display name and title
+import {PropTypes} from 'prop-types';
+
 const Name = ( {name} ) => (
   <span>
   <div className='name'>{name}</div>
   </span>
 );
+
+Name.prototype = {
+  name: PropTypes.string.isRequired
+}
+
 export default Name;

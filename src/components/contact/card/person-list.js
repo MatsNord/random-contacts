@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+import { PersonType } from '../contactPropTypes';
 import Card from './card';
 
 const PersonList = ({persons, filter, order}) => {
@@ -19,6 +21,11 @@ const PersonList = ({persons, filter, order}) => {
         </div>
     </div>
 )};
+
+PersonList.propTypes = {
+    persons: PropTypes.arrayOf( PersonType )
+};
+
 
 export default PersonList;
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { PersonType } from '../contactPropTypes';
 import InfoItem from './../info/infoItem';
 import EmailItem from './../info/emailItem';
 import './full-info.css';
@@ -20,5 +21,6 @@ const FullInfo = ({person}) => {
 
   const formatDate = (str) => str.substring(0,10);
 
+  FullInfo.prototype = PersonType;
 
   export default FullInfo;
