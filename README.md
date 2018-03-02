@@ -1,3 +1,15 @@
+# random-contacts
+Contacts app of randomuser.me
+
+## Install
+`npm install` or use `yarn install`
+
+## Externa dependencies
+It uses the API of Random User Generator(https://randomuser.me/) No mock installed in GUI.
+
+## Miscelaneous
+The APP is not ejected from create-react-app scripts, so the rest of the readme should be valid, if I did not break anything.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
