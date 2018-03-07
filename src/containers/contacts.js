@@ -67,16 +67,19 @@ class Contacts extends Component {
 
   componentDidMount(){
     this.props.onContactsRequest();
-    // const sortCB = this.state.sortOrder;
-    // const persons = this.props.contacts.data.sort(sortCB);
-    // this.setState({persons: [...persons], backData: [...persons]})
   }
+
+  componentWillReceiveProps(nextProps) {
+    console.log( nextProps );
+    const sortCB = this.state.sortOrder;
+    const persons = nextProps.contacts.sort(sortCB);
+    this.setState({persons: [...persons], backData: [...persons]})
+  }
+
 
   render() {
     // All fetched data of persons. 
-    //const {persons} = this.state;
-    const persons = this.props.contacts;
-    // The switch directive is to mutually exclude the other route
+    const {persons} = this.state;
     return (
       <div>
         { persons ? (
