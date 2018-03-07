@@ -3,7 +3,7 @@ import {
   CONTACTS_REQUESTED_SUCCESS
  } from '../actions'
 
-export const contactsReducer = (state={}, action ) => {
+export const contactsReducer = ( state = {persons: [] }, action ) => {
   switch(action.type) {
     case CONTACTS_REQUESTED:
       return {
