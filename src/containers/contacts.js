@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import { Switch, Route} from 'react-router-dom';
-import {getContacts} from './../api';
+import { connect } from 'react-redux';
+//import { getContacts } from './../api';
 import PersonCard from './../components/contact/card/person-card';
 import PersonList from './../components/contact/card/person-list';
 import Loader from './../components/loader/loader';
+import { requestContacts } from '../actions';
 
 
 // This implementation of sort functions are too trivial, and could be more sofisticated
@@ -64,16 +66,16 @@ class Contacts extends Component {
    };
 
   componentDidMount(){
-    getContacts().then(data => {
-      const sortCB = this.state.sortOrder;
-      const persons = data.sort(sortCB);
-      this.setState({persons: [...persons], backData: [...persons]})
-    });
+    this.props.onContactsRequest();
+    // const sortCB = this.state.sortOrder;
+    // const persons = this.props.contacts.data.sort(sortCB);
+    // this.setState({persons: [...persons], backData: [...persons]})
   }
 
   render() {
     // All fetched data of persons. 
-    const {persons} = this.state;
+    //const {persons} = this.state;
+    const persons = this.props.contacts;
     // The switch directive is to mutually exclude the other route
     return (
       <div>
@@ -95,4 +97,14 @@ class Contacts extends Component {
   }
 }
 
-export default Contacts;
+const mapStateToProps = state => ({
+  contacts: state.persons
+});
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onContactsRequest: () =>  dispatch(requestContacts())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contacts);
